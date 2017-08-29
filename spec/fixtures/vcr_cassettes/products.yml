@@ -1,0 +1,425 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://amits-assorted.neto.com.au/do/WS/NetoAPI
+    body:
+      encoding: UTF-8
+      string: '{"Filter":{"IsActive":["True"],"Approved":["True"],"OutputSelector":["SKU","Name","Description","ImageURL","ProductURL","Categories","Brand","UPC","WarehouseQuantity","DefaultPrice"]}}'
+    headers:
+      Netoapi-Action:
+      - GetItem
+      User-Agent:
+      - dynamiccreative.com ruby client
+      Netoapi-Key:
+      - 3RqSqZ384PtUNh9Im6A0bAG9FdGbmq0j
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Aug 2017 12:33:21 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1696'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - 8363141 8363142
+      Cache-Control:
+      - max-age=0
+      Accept-Ranges:
+      - bytes
+      - bytes
+      Set-Cookie:
+      - incap_ses_500_1114602=zqNcUmktNgSZZcad11vwBhBfpVkAAAAAte9whmCmKvy9BUwnzmgaOQ==;
+        path=/; Domain=.neto.com.au
+      - nlbi_1114602=I17ociWJWS7CKkYdX7YK4gAAAAAh4yOQmkchTwozQ5VuiCJC; path=/; Domain=.neto.com.au
+      - visid_incap_1114602=1CQF1b5RQ7apklNDwQQxgQ9fpVkAAAAAQUIPAAAAAAC9H16vIJIhCaxIDVoEbnaI;
+        expires=Tue, 28 Aug 2018 14:35:27 GMT; path=/; Domain=.neto.com.au
+      X-Iinfo:
+      - 1-92573855-92573976 NNNN CT(180 360 0) RT(1504009999199 232) q(0 0 5 2) r(13
+        13) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Item":[{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"7"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/1.jpg","InventoryID":"100","Brand":"Bollywood","UPC":"1234567891","DefaultPrice":"79.95","Name":"[Sample]
+        Americana Dining Chair","Description":"<p>Product descriptions and images
+        are an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_1"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/10.jpg","InventoryID":"101","Brand":"Etsy","UPC":"","DefaultPrice":"149.95","Name":"[Sample]
+        Bently Luxury Dining Chair","Description":"<p>Product descriptions and images
+        are an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_10"},{"ProductURL":"","Categories":[{"Category":[{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"},{"CategoryID":"101","Priority":"0","CategoryName":"[Sample] Sub
+        Category 2"}]}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/10_blue.jpg","InventoryID":"102","Brand":"","UPC":"","DefaultPrice":"149.95","Name":"[Sample]
+        Bently Luxury Dining Chair [Colour: Blue]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_10_blue"},{"ProductURL":"","Categories":[{"Category":[{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"},{"CategoryID":"102","Priority":"0","CategoryName":"[Sample] Sub
+        Category 3"}]}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/10.jpg","InventoryID":"103","Brand":"","UPC":"","DefaultPrice":"149.95","Name":"[Sample]
+        Bently Luxury Dining Chair [Colour: Grey]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_10_grey"},{"ProductURL":"","Categories":[{"Category":[{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"},{"CategoryID":"103","Priority":"0","CategoryName":"[Sample] Sub
+        Category 4"}]}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/10_orange.jpg","InventoryID":"104","Brand":"","UPC":"","DefaultPrice":"149.95","Name":"[Sample]
+        Bently Luxury Dining Chair [Colour: Orange]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_10_orange"},{"ProductURL":"","Categories":[{"Category":[{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"},{"CategoryID":"104","Priority":"0","CategoryName":"[Sample] Sub
+        Category 5"}]}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/10_yellow.jpg","InventoryID":"105","Brand":"","UPC":"","DefaultPrice":"149.95","Name":"[Sample]
+        Bently Luxury Dining Chair [Colour: Yellow]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_10_yellow"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/2.jpg","InventoryID":"106","Brand":"Bollywood","UPC":"","DefaultPrice":"84.95","Name":"[Sample]
+        Eiffel Dining Chair","Description":"<p>Product descriptions and images are
+        an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_2"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/2_black.jpg","InventoryID":"107","Brand":"","UPC":"","DefaultPrice":"84.95","Name":"[Sample]
+        Eiffel Dining Chair [Colour: Black]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_2_black"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/2_grey.jpg","InventoryID":"108","Brand":"","UPC":"","DefaultPrice":"84.95","Name":"[Sample]
+        Eiffel Dining Chair [Colour: grey]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_2_grey"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/2_red.jpg","InventoryID":"109","Brand":"","UPC":"","DefaultPrice":"84.95","Name":"[Sample]
+        Eiffel Dining Chair [Colour: Red]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_2_red"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/2.jpg","InventoryID":"110","Brand":"","UPC":"","DefaultPrice":"84.95","Name":"[Sample]
+        Eiffel Dining Chair [Colour: White]","Description":"<p>Product descriptions
+        and images are an important part of any product listing. In a recent survey,
+        63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_2_white"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"14"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/3.jpg","InventoryID":"111","Brand":"","UPC":"","DefaultPrice":"109.95","Name":"[Sample]
+        Neo Bentwood Chair","Description":"<p>Product descriptions and images are
+        an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_3"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"9"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/4.jpg","InventoryID":"112","Brand":"","UPC":"","DefaultPrice":"99.95","Name":"[Sample]
+        Lux Plastic Dining Chair","Description":"<p>Product descriptions and images
+        are an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_4"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"30"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/5.jpg","InventoryID":"113","Brand":"","UPC":"","DefaultPrice":"109.95","Name":"[Sample]
+        Matrix Dining Chair","Description":"<p>Product descriptions and images are
+        an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_5"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"14"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/6.jpg","InventoryID":"114","Brand":"","UPC":"","DefaultPrice":"110.95","Name":"[Sample]
+        Suzy Dining Chair","Description":"<p>Product descriptions and images are an
+        important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_6"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"5"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/7.jpg","InventoryID":"115","Brand":"","UPC":"","DefaultPrice":"79.95","Name":"[Sample]
+        Rosie Wooden Dining Chair","Description":"<p>Product descriptions and images
+        are an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_7"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"6"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/8.jpg","InventoryID":"116","Brand":"","UPC":"","DefaultPrice":"99.95","Name":"[Sample]
+        Arlo Metal Dining Chair","Description":"<p>Product descriptions and images
+        are an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_8"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"6"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/9.jpg","InventoryID":"117","Brand":"","UPC":"","DefaultPrice":"129.95","Name":"[Sample]
+        Amazon Wooden Chair","Description":"<p>Product descriptions and images are
+        an important part of any product listing. In a recent survey, 63% of shoppers
+        reported them as very important to their decision-making process.</p>\n\n<p><em>This
+        is an example product description for a demonstration product. Purchases of
+        this product will not be fulfilled. </em></p>\n\n<p>Product descriptions can
+        contain text, images, YouTube videos, html and even javascript. Product descriptions
+        should be less than 600 words in length and should highlight the features
+        and benefits of the product you are selling.</p>\n\n<p>Unique product descriptions
+        that are well written and content rich can help to improve your search engine
+        rankings and sales conversion rates. Try to avoid copying and pasting product
+        descriptions from competitor or manufacturer websites. This is deemed to be
+        duplicate content and could negatively impact your search engine rankings.</p>\n\n<p>You
+        should invest in high-quality product images because the perceived value of
+        your products is directly impacted by the quality of your product images.
+        To get started, invest in a good camera, tripod, light box and a few YouTube
+        tutorials. Alternatively, you can always request high-quality photographs
+        from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
+        and its related sales data will automatically be deleted if you choose to
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_9"}],"CurrentTime":"2017-08-29
+        12:33:21","Ack":"Success"}'
+    http_version: 
+  recorded_at: Tue, 29 Aug 2017 12:33:21 GMT
+recorded_with: VCR 3.0.3
