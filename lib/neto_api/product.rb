@@ -60,7 +60,7 @@ module NetoApi
             product.send("#{DC_CATEGORY_ELEMENTS[index]}=".to_sym, c['CategoryName'])
           end
       else
-        product.first_category = categories['CategoryName']
+        product.first_category = categories['CategoryName'] if categories
       end
     end
 
