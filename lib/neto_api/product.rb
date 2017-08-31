@@ -31,12 +31,14 @@ module NetoApi
       all_items = []
       page = 0
 
-      begin
+      loop do
         filters['Filter']['Page'] = page
         items = post('GetItem', filters).body['Item']
+        break if items.length.zero?
+
         all_items << items
         page += 1
-      end while items.length > 0
+      end
 
       all_items.flatten
     end
