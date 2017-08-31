@@ -5,8 +5,7 @@ module NetoApi
   class Product < Base
 
     def all(filters = DEFAULT_FILTERS)
-      items = post('GetItem', filters).body['Item']
-      items.inject([]) do |list, item|
+      items(filters).inject([]) do |list, item|
         list << ::Product.new.tap do |p|
           p.sku = item['SKU']
           p.product = item['Name']
@@ -22,12 +21,31 @@ module NetoApi
       end
     end
 
+    def self.default_filters
+      DEFAULT_FILTERS
+    end
+
     private
+
+    def items(filters)
+      all_items = []
+      page = 0
+
+      begin
+        filters['Filter']['Page'] = page
+        items = post('GetItem', filters).body['Item']
+        all_items << items
+        page += 1
+      end while items.length > 0
+
+      all_items.flatten
+    end
 
     DEFAULT_FILTERS = {
       'Filter' => {
         'IsActive' => ['True'].freeze,
         'Approved' => ['True'].freeze,
+        'Limit' => 250,
         'OutputSelector' => %w[SKU Name Description ImageURL ProductURL Categories Brand UPC WarehouseQuantity DefaultPrice].freeze
       }
     }
@@ -50,7 +68,6 @@ module NetoApi
       warehouse_quantity = item['WarehouseQuantity']
       if warehouse_quantity.is_a? Array
         product.stock_amount = warehouse_quantity.inject(0) { |sum, item| sum += item['Quantity'].to_i }
-        binding.pry
       else
         product.stock_amount = item['WarehouseQuantity']['Quantity'].to_i
       end
