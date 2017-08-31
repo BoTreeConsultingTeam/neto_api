@@ -5,7 +5,7 @@ http_interactions:
     uri: https://amits-assorted.neto.com.au/do/WS/NetoAPI
     body:
       encoding: UTF-8
-      string: '{"Filter":{"IsActive":["True"],"Approved":["True"],"OutputSelector":["SKU","Name","Description","ImageURL","ProductURL","Categories","Brand","UPC","WarehouseQuantity","DefaultPrice"]}}'
+      string: '{"Filter":{"IsActive":["True"],"Approved":["True"],"Limit":10,"OutputSelector":["SKU","Name","Description","ImageURL","ProductURL","Categories","Brand","UPC","WarehouseQuantity","DefaultPrice"],"Page":0}}'
     headers:
       Netoapi-Action:
       - GetItem
@@ -25,31 +25,31 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 31 Aug 2017 06:33:40 GMT
+      - Thu, 31 Aug 2017 07:24:54 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1724'
+      - '1422'
       Connection:
       - keep-alive
       Vary:
       - Accept-Encoding
       X-Cache:
-      - '49455293'
+      - '53649997'
       Cache-Control:
       - max-age=0
       Accept-Ranges:
       - bytes
       - bytes
       Set-Cookie:
-      - incap_ses_165_1114602=x367XRV+h3lxuv01PDNKAsOtp1kAAAAAXfJAqGNj1JlO7+qM/C0ZTg==;
+      - incap_ses_165_1114602=gRqlGUxNSRLI2h42PDNKAsa5p1kAAAAAfy5ODXjEMVkTg0+rjzzQ5A==;
         path=/; Domain=.neto.com.au
-      - nlbi_1114602=frSYVaQw/WnMmOO5X7YK4gAAAAA+0Zah/S4xFcc4UY/6YmRg; path=/; Domain=.neto.com.au
-      - visid_incap_1114602=hm7MWbP5R2GpUT9ajxkcaUKtp1kAAAAAQUIPAAAAAABuzd+sAs5xPi+YIgk4IN47;
-        expires=Thu, 30 Aug 2018 07:54:21 GMT; path=/; Domain=.neto.com.au
+      - nlbi_1114602=mLuAD71iISUVKbcUX7YK4gAAAACEzakBUheQcT9vWJXCsuqA; path=/; Domain=.neto.com.au
+      - visid_incap_1114602=VyJ+7yBWTNqelqavrkHNI8S5p1kAAAAAQUIPAAAAAABU2JN4y+Su9ZoQDo5NWple;
+        expires=Thu, 30 Aug 2018 07:54:14 GMT; path=/; Domain=.neto.com.au
       X-Iinfo:
-      - 2-16028253-16028306 NNNN CT(184 356 0) RT(1504161218166 225) q(0 0 6 0) r(16
-        16) U6
+      - 5-22335912-22335980 NNNN CT(178 360 0) RT(1504164292731 262) q(0 0 6 0) r(13
+        13) U6
       X-Cdn:
       - Incapsula
     body:
@@ -256,7 +256,65 @@ http_interactions:
         tutorials. Alternatively, you can always request high-quality photographs
         from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
         and its related sales data will automatically be deleted if you choose to
-        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_2_red"},{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_2_red"}],"CurrentTime":"2017-08-31
+        07:24:54","Ack":"Success"}'
+    http_version: 
+  recorded_at: Thu, 31 Aug 2017 07:24:54 GMT
+- request:
+    method: post
+    uri: https://amits-assorted.neto.com.au/do/WS/NetoAPI
+    body:
+      encoding: UTF-8
+      string: '{"Filter":{"IsActive":["True"],"Approved":["True"],"Limit":10,"OutputSelector":["SKU","Name","Description","ImageURL","ProductURL","Categories","Brand","UPC","WarehouseQuantity","DefaultPrice"],"Page":1}}'
+    headers:
+      Netoapi-Action:
+      - GetItem
+      User-Agent:
+      - dynamiccreative.com ruby client
+      Netoapi-Key:
+      - 3RqSqZ384PtUNh9Im6A0bAG9FdGbmq0j
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 31 Aug 2017 07:25:00 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1285'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - '872353'
+      Cache-Control:
+      - max-age=0
+      Accept-Ranges:
+      - bytes
+      - bytes
+      Set-Cookie:
+      - incap_ses_165_1114602=IWX6V+Tmp1LI2h42PDNKAsy5p1kAAAAAzPznaBPLhXoYvtRmHLhV6g==;
+        path=/; Domain=.neto.com.au
+      - nlbi_1114602=veabCKk69U3qbO0MX7YK4gAAAAAAQ7KNk1eyv9j2suDTnvZO; path=/; Domain=.neto.com.au
+      - visid_incap_1114602=VyJ+7yBWTNqelqavrkHNI8S5p1kAAAAAQUIPAAAAAABU2JN4y+Su9ZoQDo5NWple;
+        expires=Thu, 30 Aug 2018 07:54:24 GMT; path=/; Domain=.neto.com.au
+      X-Iinfo:
+      - 4-20441780-20441842 NNNN CT(179 365 0) RT(1504164298985 243) q(0 0 5 0) r(12
+        12) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Item":[{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
         Clothing"}}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/2.jpg","InventoryID":"110","Brand":"","UPC":"","DefaultPrice":"84.95","Name":"[Sample]
         Eiffel Dining Chair [Colour: White]","Description":"<p>Product descriptions
         and images are an important part of any product listing. In a recent survey,
@@ -417,7 +475,64 @@ http_interactions:
         from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
         and its related sales data will automatically be deleted if you choose to
         subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_9"}],"CurrentTime":"2017-08-31
-        06:33:40","Ack":"Success"}'
+        07:25:00","Ack":"Success"}'
     http_version: 
-  recorded_at: Thu, 31 Aug 2017 06:33:40 GMT
+  recorded_at: Thu, 31 Aug 2017 07:25:00 GMT
+- request:
+    method: post
+    uri: https://amits-assorted.neto.com.au/do/WS/NetoAPI
+    body:
+      encoding: UTF-8
+      string: '{"Filter":{"IsActive":["True"],"Approved":["True"],"Limit":10,"OutputSelector":["SKU","Name","Description","ImageURL","ProductURL","Categories","Brand","UPC","WarehouseQuantity","DefaultPrice"],"Page":2}}'
+    headers:
+      Netoapi-Action:
+      - GetItem
+      User-Agent:
+      - dynamiccreative.com ruby client
+      Netoapi-Key:
+      - 3RqSqZ384PtUNh9Im6A0bAG9FdGbmq0j
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 31 Aug 2017 07:25:08 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '82'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - '29700033'
+      Cache-Control:
+      - max-age=0
+      Accept-Ranges:
+      - bytes
+      - bytes
+      Set-Cookie:
+      - incap_ses_165_1114602=LQzIQ1zDBX3I2h42PDNKAtS5p1kAAAAAR1995cn7RQkSlyT3oZ0h7Q==;
+        path=/; Domain=.neto.com.au
+      - nlbi_1114602=oW4PYsWbXCwyPY2pX7YK4gAAAAD9MzwpR4UwF7qHpk7W+YNX; path=/; Domain=.neto.com.au
+      - visid_incap_1114602=VyJ+7yBWTNqelqavrkHNI8S5p1kAAAAAQUIPAAAAAABU2JN4y+Su9ZoQDo5NWple;
+        expires=Thu, 30 Aug 2018 07:54:14 GMT; path=/; Domain=.neto.com.au
+      X-Iinfo:
+      - 3-18616933-18616996 NNNN CT(177 360 0) RT(1504164306587 248) q(0 0 5 0) r(13
+        13) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Item":[],"CurrentTime":"2017-08-31 07:25:08","Ack":"Success"}'
+    http_version: 
+  recorded_at: Thu, 31 Aug 2017 07:25:08 GMT
 recorded_with: VCR 3.0.3
