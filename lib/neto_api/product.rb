@@ -69,7 +69,7 @@ module NetoApi
     def set_stock_amount(product, item)
       warehouse_quantity = item['WarehouseQuantity']
       if warehouse_quantity.is_a? Array
-        product.stock_amount = warehouse_quantity.inject(0) { |sum, item| sum += item['Quantity'].to_i }
+        product.stock_amount = warehouse_quantity.inject(0) { |sum, w| sum + w['Quantity'].to_i }
       else
         product.stock_amount = item['WarehouseQuantity']['Quantity'].to_i
       end
