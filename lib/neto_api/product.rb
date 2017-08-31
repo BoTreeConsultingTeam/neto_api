@@ -1,20 +1,59 @@
 require 'neto_api/base'
+require 'product'
 
 module NetoApi
   class Product < Base
 
     def all(filters = DEFAULT_FILTERS)
-      post('GetItem', filters)
+      items = post('GetItem', filters).body['Item']
+      items.inject([]) do |list, item|
+        list << ::Product.new.tap do |p|
+          p.sku = item['SKU']
+          p.product = item['Name']
+          p.description = item['Description']
+          p.image_url = item['ImageURL']
+          p.url = item['ItemURL']
+          set_category(p, item)
+          p.brand = item['Brand']
+          p.gtin = item['UPC'] || item['UPC1']
+          set_stock_amount(p, item)
+          p.stock_available = p.stock_amount > 0
+        end
+      end
     end
 
     private
 
     DEFAULT_FILTERS = {
       'Filter' => {
-        'IsActive' => ['True'],
-        'Approved' => ['True'],
+        'IsActive' => ['True'].freeze,
+        'Approved' => ['True'].freeze,
         'OutputSelector' => %w[SKU Name Description ImageURL ProductURL Categories Brand UPC WarehouseQuantity DefaultPrice].freeze
       }
     }
+
+    DC_CATEGORY_ELEMENTS = %w[first_category second_category third_category fourth_category fifth_category].freeze
+
+    def set_category(product, item)
+      categories = item.fetch('Categories').first['Category']
+      if categories.is_a? Array
+        categories.sort_by! { |c| -c['Priority'].to_i }
+          .each_with_index do |c, index|
+            product.send("#{DC_CATEGORY_ELEMENTS[index]}=".to_sym, c['CategoryName'])
+          end
+      else
+        product.first_category = categories['CategoryName']
+      end
+    end
+
+    def set_stock_amount(product, item)
+      warehouse_quantity = item['WarehouseQuantity']
+      if warehouse_quantity.is_a? Array
+        product.stock_amount = warehouse_quantity.inject(0) { |sum, item| sum += item['Quantity'].to_i }
+        binding.pry
+      else
+        product.stock_amount = item['WarehouseQuantity']['Quantity'].to_i
+      end
+    end
   end
 end

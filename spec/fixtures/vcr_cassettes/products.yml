@@ -25,37 +25,36 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 29 Aug 2017 12:33:21 GMT
+      - Thu, 31 Aug 2017 06:33:40 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1696'
+      - '1724'
       Connection:
       - keep-alive
       Vary:
       - Accept-Encoding
       X-Cache:
-      - 8363141 8363142
+      - '49455293'
       Cache-Control:
       - max-age=0
       Accept-Ranges:
       - bytes
       - bytes
       Set-Cookie:
-      - incap_ses_500_1114602=zqNcUmktNgSZZcad11vwBhBfpVkAAAAAte9whmCmKvy9BUwnzmgaOQ==;
+      - incap_ses_165_1114602=x367XRV+h3lxuv01PDNKAsOtp1kAAAAAXfJAqGNj1JlO7+qM/C0ZTg==;
         path=/; Domain=.neto.com.au
-      - nlbi_1114602=I17ociWJWS7CKkYdX7YK4gAAAAAh4yOQmkchTwozQ5VuiCJC; path=/; Domain=.neto.com.au
-      - visid_incap_1114602=1CQF1b5RQ7apklNDwQQxgQ9fpVkAAAAAQUIPAAAAAAC9H16vIJIhCaxIDVoEbnaI;
-        expires=Tue, 28 Aug 2018 14:35:27 GMT; path=/; Domain=.neto.com.au
+      - nlbi_1114602=frSYVaQw/WnMmOO5X7YK4gAAAAA+0Zah/S4xFcc4UY/6YmRg; path=/; Domain=.neto.com.au
+      - visid_incap_1114602=hm7MWbP5R2GpUT9ajxkcaUKtp1kAAAAAQUIPAAAAAABuzd+sAs5xPi+YIgk4IN47;
+        expires=Thu, 30 Aug 2018 07:54:21 GMT; path=/; Domain=.neto.com.au
       X-Iinfo:
-      - 1-92573855-92573976 NNNN CT(180 360 0) RT(1504009999199 232) q(0 0 5 2) r(13
-        13) U6
+      - 2-16028253-16028306 NNNN CT(184 356 0) RT(1504161218166 225) q(0 0 6 0) r(16
+        16) U6
       X-Cdn:
       - Incapsula
     body:
       encoding: ASCII-8BIT
-      string: '{"Item":[{"ProductURL":"","Categories":[{"Category":{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
-        Clothing"}}],"WarehouseQuantity":{"WarehouseID":"1","Quantity":"7"},"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/1.jpg","InventoryID":"100","Brand":"Bollywood","UPC":"1234567891","DefaultPrice":"79.95","Name":"[Sample]
+      string: '{"Item":[{"ProductURL":"","Categories":[{"Category":[{"CategoryID":"98","Priority":"1","CategoryName":"Clothing"},{"CategoryID":"101","Priority":"0","CategoryName":"T-Shirt"}]}],"WarehouseQuantity":[{"WarehouseID":"1","Quantity":"7"},{"WarehouseID":"2","Quantity":"2"}],"ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/1.jpg","InventoryID":"100","Brand":"Bollywood","UPC":"1234567891","DefaultPrice":"79.95","Name":"[Sample]
         Americana Dining Chair","Description":"<p>Product descriptions and images
         are an important part of any product listing. In a recent survey, 63% of shoppers
         reported them as very important to their decision-making process.</p>\n\n<p><em>This
@@ -95,8 +94,7 @@ http_interactions:
         from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
         and its related sales data will automatically be deleted if you choose to
         subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_10"},{"ProductURL":"","Categories":[{"Category":[{"CategoryID":"99","Priority":"0","CategoryName":"Women''s
-        Clothing"},{"CategoryID":"101","Priority":"0","CategoryName":"[Sample] Sub
-        Category 2"}]}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/10_blue.jpg","InventoryID":"102","Brand":"","UPC":"","DefaultPrice":"149.95","Name":"[Sample]
+        Clothing"},{"CategoryID":"101","Priority":"0","CategoryName":"T-Shirt"}]}],"WarehouseQuantity":"","ImageURL":"https://cdn.neto.com.au/assets/sample_data/products/main/10_blue.jpg","InventoryID":"102","Brand":"","UPC":"","DefaultPrice":"149.95","Name":"[Sample]
         Bently Luxury Dining Chair [Colour: Blue]","Description":"<p>Product descriptions
         and images are an important part of any product listing. In a recent survey,
         63% of shoppers reported them as very important to their decision-making process.</p>\n\n<p><em>This
@@ -418,8 +416,8 @@ http_interactions:
         tutorials. Alternatively, you can always request high-quality photographs
         from the product''s manufacturer.</p>\n\n<p><em>This demonstration product
         and its related sales data will automatically be deleted if you choose to
-        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_9"}],"CurrentTime":"2017-08-29
-        12:33:21","Ack":"Success"}'
+        subscribe to a paid plan.</em></p>\n\n<p>&nbsp;</p>\n","SKU":"SMP_9"}],"CurrentTime":"2017-08-31
+        06:33:40","Ack":"Success"}'
     http_version: 
-  recorded_at: Tue, 29 Aug 2017 12:33:21 GMT
+  recorded_at: Thu, 31 Aug 2017 06:33:40 GMT
 recorded_with: VCR 3.0.3
